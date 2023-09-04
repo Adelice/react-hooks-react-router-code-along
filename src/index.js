@@ -8,18 +8,19 @@ import Home from "./Home";
 
 ReactDOM.render(
 <BrowserRouter>
-  <Switch>
+
   
+<Route exact path="/">
+      <Home />
+    </Route>
     <Route path="/about">
       <About />
     </Route>
     <Route path="/login">
       <Login />
     </Route>
-    <Route exact path="/">
-      <Home />
-    </Route>
-  </Switch>
+   
+  
   </BrowserRouter>,
 
 
